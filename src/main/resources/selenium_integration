@@ -1,0 +1,33 @@
+<dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.26.0</version>
+</dependency>
+
+/* This code does not work due to Google update on login in 2020, but I'll leave it
+    to know how to integrate Selenium and RestAssured
+
+    import org.openqa.selenium.By;
+        import org.openqa.selenium.Keys;
+        import org.openqa.selenium.WebDriver;
+        import org.openqa.selenium.chrome.ChromeDriver;
+        import org.openqa.selenium.support.ui.ExpectedConditions;
+        import org.openqa.selenium.support.ui.WebDriverWait;
+
+        import java.time.Duration;
+
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php&state=detroit");
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        By emailSelector = By.cssSelector("input[type='email']");
+        By passwordSelector = By.cssSelector("input[type='password']");
+
+        driver.findElement(emailSelector).sendKeys("email");
+        driver.findElement(emailSelector).sendKeys(Keys.ENTER);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordSelector));
+        driver.findElement(passwordSelector).sendKeys("password");
+        driver.findElement(passwordSelector).sendKeys(Keys.ENTER);
+        Thread.sleep(4000); // I couldn't really run this automation, so I wouldn't know how to replace this
+        String url = driver.getCurrentUrl();
+*/
